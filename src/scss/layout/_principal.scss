@@ -1,0 +1,121 @@
+.principal{
+    background-color: $negro;
+    color: $blanco;
+    font-family: $fuente_principal;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
+    width: calc(100%);
+    font-size: 1rem;
+
+    @include tablet {
+        font-size: 1.5rem;
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 10rem 0 5rem 0;
+    }
+}
+
+.presentacion{
+
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    height: auto;
+
+    @include tablet {
+        width: calc(50%);
+        height: calc(50%);
+        margin: 1rem 3rem 3rem 3rem;
+    }
+    
+    h1{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    h1,p{
+
+        color: $blanco;
+        padding: 1rem;
+        text-align: center;
+              
+
+        @include tablet {
+            padding: 0;
+            margin: 2rem 0;
+        }
+
+        @include desktop {
+
+            margin: 0 0 0 -5rem;
+            max-width: calc(100%);
+            width: calc(100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .frase{
+        margin:3rem 0;
+        max-width: calc(100%);
+    }
+    h1{
+        font-size: 5rem;
+        border-bottom: 0;
+        margin-bottom: 0;
+
+        &:hover{
+
+            border-bottom: 1px solid $gris;
+        }
+    }
+    p{
+        max-width: 60rem;
+        font-size: 2rem;
+    }
+    .btn{
+        background-color: $blanco;
+        color: $negro;
+        font-weight: bold;
+        border-radius: 5rem;
+        padding: 2rem;
+        font-size: 2rem;
+
+        @include tablet {
+            
+            margin-top: 2rem;
+               
+        }
+
+        &:hover{
+            cursor: pointer;
+            background-color: $celeste_claro;
+            font-weight: bold;
+        }
+    }
+
+}
+.video{
+    padding: 2rem 0;
+
+    @include tablet {
+        padding: 1rem;
+        width: calc(50%);
+        height: calc(50%);
+    }
+
+    .persona{
+        width: calc(100%);
+        height: calc(100%);
+
+        @include tablet {
+            width: calc(75%);
+            height: calc(75%);
+        }
+    }
+}

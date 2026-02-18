@@ -1,0 +1,30 @@
+.comentario{
+    font-family: $fuente_principal;
+    background-color: $grisOscuro;
+    text-align: center;
+    color: $blanco;
+    padding-bottom: 3rem;
+    display: block;
+
+    .comentario_titulo{
+
+        padding: 3rem 1rem;
+        font-size: 1rem;
+        background-color: $negro;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+
+        @include tablet {
+            font-size: 3rem;
+        }
+    }
+    .comentario_texto{
+        padding: 6rem ;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+
+        @include tablet {
+            font-size: 3rem;
+        }
+    }
+}

@@ -1,0 +1,289 @@
+.likedin{
+    width: calc(100%);
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+
+    a{
+        background-color: $celeste_oscuro;
+        color: $blanco;
+        padding: 1rem 1rem;
+        border-radius: 2rem;
+
+        @include tablet {
+            font-size: 3rem;
+        }
+    }
+}
+
+.encabezado{
+    text-align: center;
+    h1,h2{
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: $fuente_principal;
+    }
+}
+
+.datos_personales{
+    max-width: calc(95%);
+
+    margin: 0 1rem;
+    
+
+    .contenido_datos{
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @include tablet {
+        padding: 0.5rem 2rem 2rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1rem;
+    }
+    
+    .fotgrafia{
+        width: calc(100%);
+        width: 30rem;
+        height: 30rem;
+        padding: 2rem;
+       
+        .fotografiaDis{
+            width: calc(100%);
+            border-radius: 2rem;
+        }
+    }
+
+    .nombre{
+        text-align: center;
+        margin-top: 0;
+        font-weight: bold;
+        font-size: 2.5rem;
+
+        @include tablet {
+            padding: 0.5rem 2rem 2rem 2rem;
+        }
+    }
+
+    p{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.tecnologias{
+    display: block;
+}
+
+.edu_tec{
+    width: calc(100%);
+    text-align: center;
+    padding: 2rem;
+
+    h2{
+        font-weight: bold;
+    }
+
+    @include tablet {
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .lenguajes{
+
+        max-width: calc(95%);
+        
+        @include tablet {
+            max-width: calc(50%);
+        }
+    }
+
+
+}
+
+.lenguaje{
+    max-width: calc(100%);
+    display: grid;
+    @include grid(2,1fr);
+
+    margin: 0 auto;
+    align-items: center;
+
+    @include tablet {
+        @include grid(4,1fr);
+    }
+
+    .icono1{
+        background-image: url("/build/img/html.svg");
+        width: 10rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin: 0 auto;
+
+    }    
+    .icono2{
+        background-image: url("/build/img/css.svg");
+        width: 10rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono3{
+        background-image: url("/build/img/sass.svg");
+        width: 10rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono4{
+        background-image: url("/build/img/javaScript.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono5{
+        background-image: url("/build/img/php.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono6{
+        background-image: url("/build/img/sql.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono7{
+        background-image: url("/build/img/java.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono8{
+        background-image: url("/build/img/arduino.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono9{
+        background-image: url("/build/img/c.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono10{
+        background-image: url("/build/img/c++.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono11{
+        background-image: url("/build/img/c-sharp.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono12{
+        background-image: url("/build/img/github.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+    }
+    .icono13{
+        background-image: url("/build/img/git.svg");
+        width: 8rem;
+        height: 7rem;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+}
+
+.certificados{
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    padding:2rem 0;
+
+    @include tablet {
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    a{
+        color: $celeste_oscuro;
+        padding: 1rem 3rem; 
+
+        &:hover{
+            -webkit-box-shadow: 0px 0px 21px 4px rgba(0,0,0,0.77);
+            -moz-box-shadow: 0px 0px 21px 4px rgba(0,0,0,0.77);
+            box-shadow: 0px 0px 21px 4px rgba(0,0,0,0.77);
+            border-radius: 1rem;
+        }
+    }
+
+}
+
+.cv{
+    width: calc(100%);
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+
+    .texto_cv{
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 2rem;
+    }
+
+    .opc_idi{
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        font-weight: bold;
+        color: $celeste_oscuro;
+        text-align: center;
+    }
+
+    .btn_cv{
+
+        background-color: $celeste_oscuro;
+        color: $blanco;
+        text-align: center;
+        border-radius: 3rem;
+        padding: 2rem;
+        padding: 2rem;
+        margin: 2rem;
+
+
+        @include tablet {
+            font-size: 2rem;            
+        }
+    }
+}

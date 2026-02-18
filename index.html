@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO DC</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header inicio">
+        <nav>
+            <h2 class="log">DC</h2>
+            <ul class="opciones">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="sobremi.html">Sobre mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <div class="principal">
+        <div class="presentacion">
+            <h1>Daniel Cos</h1>
+            <p class="frase">
+                Desarrollador de Software y Aplicaciones Web
+            </p>
+            <p class="frase">
+                "El código es como el humor. Cuando tienes que explicarlo, es malo"
+            </p>
+            <p class="frase">
+                - Cory House
+            </p>
+            <li><a href="#comentario" class="btn ver_mas">SABER MÁS</a></li>
+        </div>
+        <div class="video">
+            <video autoplay muted loop oncontextmenu="return false;" class="persona">
+                <source src="video/persona.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <section class="ultimosProyectos">
+        <h3 class="titulo_principal_proyectos">Últimos Proyectos</h3>
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/1proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Bienes Raices</h3>
+                <p class="descripcion_proyecto">
+                    Pagina web de venta de casas y apartamentos
+                </p>
+            </section>
+            <a class="contenido" href="https://bienesraices-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/2proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Festival Musical</h3>
+                <p class="descripcion_proyecto">
+                    Pagina web de venta de entradas al festival
+                </p>
+            </section>
+            <a class="contenido" href="https://ticket-festival.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/3proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Blog Cafe</h3>
+                <p class="descripcion_proyecto">
+                    Pagina web sobre cursos y tipos de cafe
+                </p>
+            </section>
+            <a class="contenido" href="https://cafeblog-dc.netlify.app">Ver Proyecto</a>
+        </section>
+        
+    </section>
+
+    <section id="comentario" class="comentario">
+        <label class="comentario_titulo">
+            "Ayudo a moldear las ideas de una manera personal."
+        </label>
+        <p class="comentario_texto">
+            "Construyo relaciones a largo plazo a través de la calidad de mi servicio. Me adapto a la forma en que mis clientes y socios desean trabajar; ya sea llevando a cabo proyectos completos o brindando soporte especializado como parte de un equipo más amplio."
+        </p>
+    </section>
+
+    <section id="contacto" class="contactar">
+
+        <section class="contactar_titulo">
+            <h3>¿Hablamos?</h3>
+            <p>
+                "Si tienes algo que compartir o preguntar, estoy aquí para ti. Utiliza mi formulario para ponerte en contacto."
+            </p>
+        </section>
+        <section class="cont_form">
+            <form id="form" class="formulario" action="https://formspree.io/f/mbjvzggk"
+            method="POST">
+                <fieldset>
+                    <section class="formulario-flex">
+                        <p>
+                            PUEDES CONTACTARME RELLENANDO EL SIGUIENTE FORMULARIO
+                        </p>
+                        <label for="Nombre" >Nombre :<span class="ogo">*</span></label>
+                        <input type="text" name="text" placeholder="Hola , soy... " id="Nombre">
+        
+                        <label for="Email" >
+                            E-mail :
+                            <span class="ogo">
+                                *
+                            </span></label>
+                        <input type="email" 
+                                name="email"
+                                placeholder="mi correo ... " 
+                                id="Email">
+        
+                        <label for="Telefono">Teléfono :<span class="ogo">*</span></label>
+                        <input type="tel" name="tel" placeholder="y mi teléfono es..." id="Telefono"> 
+        
+                    </section>
+                    
+                    <label for="Mensaje" >Mensaje :</label>
+                    <textarea 
+                    id="Mensaje" 
+                    name="message">
+                    </textarea>
+        
+                </fieldset>
+                <section class="alinear">
+                    <input type="submit" value="Enviar" class="btn_contacto">
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <section id="mensaje-exito"></section>
+
+    <footer class="footer seccion">
+        <p class="copyright">
+            &copy; Todos los derechos Reservados DC <span id="anio"></span>
+        </p>
+    </footer>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const anioActual = new Date().getFullYear();
+            document.getElementById("anio").textContent = anioActual;
+        });
+    </script>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

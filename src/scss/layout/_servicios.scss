@@ -1,0 +1,51 @@
+.servicios{
+    
+    background-color: $negro;
+    color: $blanco;
+    padding: 1rem 1rem 5rem 1rem;
+    text-align: center;
+    color: $blanco;
+    
+    .titulo_servicios{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $blanco;
+    }
+    .servicios_descripcion{
+
+        font-size: 1.5rem;
+        padding: 3rem 1rem;
+        
+        @include tablet {
+            color: $blanco;
+            font-size: 3rem;
+        }
+        
+    }
+}
+.servicio{
+
+    display: block;
+    
+    @include tablet {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100%);
+    }
+
+    .servicio_opciones{
+        
+        border: 5px solid $blanco;
+        border-radius: 5rem;
+        margin: 2rem;    
+        padding: 2rem;
+
+        .servicio_descripcion{
+            max-width: 50rem;
+            color: $blanco;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}

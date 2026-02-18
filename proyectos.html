@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header inicio">
+        <nav>
+            <h2 class="log">DC</h2>
+            <ul class="opciones">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="sobremi.html">Sobre mi</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+    <section class="ultimosProyectos">
+        <h3 class="titulo_principal_proyectos">Proyectos Personales</h3>
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/1proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Bienes Raices</h3>
+                <p class="descripcion_proyecto">
+                    Pagina web de venta de casas y apartamentos
+                </p>
+            </section>
+            <a class="contenido" href="https://bienesraices-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/2proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Festival Musical</h3>
+                <p class="descripcion_proyecto">
+                    Pagina web de venta de entradas al festival
+                </p>
+            </section>
+            <a class="contenido" href="https://ticket-festival.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/3proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Blog Cafe</h3>
+                <p class="descripcion_proyecto">
+                    Pagina web sobre cursos y tipos de cafe
+                </p>
+            </section>
+            <a class="contenido" href="https://cafeblog-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/4proyecto.webp" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Lista de Tareas</h3>
+                <p class="descripcion_proyecto">
+                    Permite llevar el control de las Tareas
+                </p>
+            </section>
+            <a class="contenido" href="https://tareasdiarias-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/5proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Ahorcado</h3>
+                <p class="descripcion_proyecto">
+                    Juego divertido que trata sobre adivinra palabras
+                </p>
+            </section>
+            <a class="contenido" href="https://ahorcado-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/6proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Apeperia</h3>
+                <p class="descripcion_proyecto">
+                    Pagina responsiva sobre empresa tecnologica
+                </p>
+            </section>
+            <a class="contenido" href="https://apeperia-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/7proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Barberia</h3>
+                <p class="descripcion_proyecto">
+                    Pagina web sobre Barberia
+                </p>
+            </section>
+            <a class="contenido" href="https://barberia-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/8proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Fruta y Fruto</h3>
+                <p class="descripcion_proyecto">
+                    Pagina web sobre recetas de cocina
+                </p>
+            </section>
+            <a class="contenido" href="https://recetarioonline-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/9proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Mini Alura DC</h3>
+                <p class="descripcion_proyecto">
+                    Pagina web sobre cursos sobre programacion
+                </p>
+            </section>
+            <a class="contenido" href="https://cursos-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/10proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">DC Store</h3>
+                <p class="descripcion_proyecto">
+                    Tienda de aplicaciones y juegos online
+                </p>
+            </section>
+            <a class="contenido" href="https://store-dc.netlify.app">Ver Proyecto</a>
+        </section>
+
+        <section class="proyecto">
+            <img class="proyecto_imagen" src="build/img/11proyecto.png" alt="imagen proyecto">
+            <section class="proyecto_descripcion">
+                <h3 class="titulo_proyecto">Frontend Store</h3>
+                <p class="descripcion_proyecto">
+                    Tienda de ropa para programadores
+                </p>
+            </section>
+            <a class="contenido" href="https://tienda-para-programadores.netlify.app">Ver Proyecto</a>
+        </section>
+        
+    </section>
+
+<footer class="footer seccion">
+    <p class="copyright">
+        &copy; Todos los derechos Reservados DC <span id="anio"></span>
+    </p>
+</footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const anioActual = new Date().getFullYear();
+        document.getElementById("anio").textContent = anioActual;
+    });
+</script>
+    
+</body>
+</html>

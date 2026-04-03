@@ -119,3 +119,41 @@
         }
     }
 }
+
+// =============================
+// GRID SOLO PARA INDEX
+// =============================
+
+.proyectos-grid {
+    @include grid(1, 2rem);
+
+    @include tablet {
+        @include grid(2, 2rem);
+    }
+
+    @include desktop {
+        @include grid(3, 2rem);
+    }
+
+    justify-items: center;
+}
+
+
+.contenido {
+            display: inline-block;
+            background: linear-gradient(135deg, #0077b5, #00a0dc);
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0.8rem 5rem;
+            border-radius: 999px;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px rgba(0, 114, 187, 0.4);
+            }
+        }
+
+        

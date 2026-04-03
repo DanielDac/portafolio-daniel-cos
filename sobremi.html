@@ -19,100 +19,93 @@
         </nav>
     </header>  
 
-    <div class="encabezado">
-        <h1>SOBRE MI</h1>
-    </div>
+    <!-- SOBRE MI -->
+    <section class="sobre-mi">
+        <div class="sobre-mi-container">
 
-    <div class="datos_personales">
-        <section class="contenido_datos">
-            <picture class="fotgrafia">
-                <source class="fotografiaDis" srcset="/build/img/foto.webp" type="image/webp">
-                <img class="fotografiaDis" loading="lazy" width="" height="" src="/build/img/foto.jpg" alt="Fotografia personal">
-            </picture>
-            <h2 class="nombre">
-                Hola soy Daniel Cos
-            </h2>
-        </section>
-        <section>
-            <p>
-            Soy un apasionado programador en proceso de convertirme en desarrollador Full-Stack. Me encanta construir soluciones y resolver problemas mediante el código. En mi tiempo libre, disfruto desarrollar proyectos personales que me permiten adquirir nuevos conocimientos y fortalecer mis habilidades.
-            </p>
+            <!-- FOTO -->
+            <div class="foto-container">
+                <img src="/build/img/foto.jpg" alt="Daniel Cos" class="foto-personal">
+            </div>
 
-        </section>
-    </div>
+            <!-- DESCRIPCIÓN -->
+            <div class="descripcion">
+                <h1>Hola, soy Daniel Cos</h1>
+                <p>
+                    Soy un apasionado programador en proceso de convertirme en desarrollador Full-Stack.
+                    Me encanta construir soluciones y resolver problemas mediante el código.
+                    En mi tiempo libre, disfruto desarrollar proyectos personales que me permiten
+                    adquirir nuevos conocimientos y fortalecer mis habilidades.
+                </p>
 
-    <section class="likedin">
-        <a href="https://www.linkedin.com/in/daniel-cos-freelance-developer" target="_blank">Clic para ver mi LinkedIn</a>
-    </section>
-          
-
-    <div class="encabezado">
-        <h2>Educacion Tecnológica</h2>
-    </div>
-
-    <div class="edu_tec">
-        <section class="lenguajes">
-            <h2>Lenguajes y tecnologias</h2>
-            <section class="lenguaje">
-                <section class="icono1"></section>
-                <section class="icono2"></section>
-                <section class="icono3"></section>
-                <section class="icono4"></section>
-                <section class="icono5"></section>
-                <section class="icono6"></section>
-                <section class="icono7"></section>
-                <section class="icono8"></section>
-                <section class="icono9"></section>
-                <section class="icono10"></section>
-                <section class="icono11"></section>
-                <section class="icono12"></section>
-                <section class="icono13"></section>
-            </section>
-        </section>
-    
-        <section class="educacion">
-            <h2>Estudios academicos</h2>
-            <section class="info_edu">
-                <ul>
-                    <li>Titulo Universitario - Ingeniería en Sistemas y ciencias de la computación </li>
-                    <li>Certificado - Developer Front-End Junior</li>
-                    <li>Certificado - Developer Full Stack</li>
-                </ul>
-            </section>
-        </section>
-    </div>
-
-
-    <section class="certificados">
-        <a class="certi" href="https://app.aluracursos.com/user/usdaniel502/fullCertificate/7795720bc7a3094fc0b2f340dc428eef">Ver certificados</a>
-    </section>
-
-    <section class="cv">
-        <label class="texto_cv" for="language">Este en mi CV: </label>
-        <select id="language" class="opc_idi">
-            <option value="" disabled selected>Seleccionar idioma</option>
-            <option value="es">Español</option>
-            <option value="en">English</option>
-        </select>
-    
-        <button class="btn_cv" onclick="downloadCV()">Descargar CV</button>
-    
-        <div id="downloadButtons">
+                <!-- BOTÓN LINKEDIN -->
+                <a href="https://www.linkedin.com/in/daniel-cos-freelance-developer" target="_blank" class="btn-linkedin">
+                    Conectar en LinkedIn
+                </a>
+            </div>
         </div>
     </section>
 
-<footer class="footer seccion">
-    <p class="copyright">
-        &copy; Todos los derechos Reservados DC <span id="anio"></span>
-    </p>
-</footer>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const anioActual = new Date().getFullYear();
-        document.getElementById("anio").textContent = anioActual;
-    });
-</script>
+    <!-- EDUCACIÓN TECNOLÓGICA -->
+    <div class="edu_tec">
+        <section class="lenguajes">
+            <h2>Lenguajes y tecnologías</h2>
+            <div class="lenguaje">
+                <div class="icono1"></div>
+                <div class="icono2"></div>
+                <div class="icono3"></div>
+                <div class="icono4"></div>
+                <div class="icono5"></div>
+                <div class="icono6"></div>
+                <div class="icono7"></div>
+                <div class="icono8"></div>
+                <div class="icono9"></div>
+                <div class="icono10"></div>
+                <div class="icono11"></div>
+                <div class="icono12"></div>
+                <div class="icono13"></div>
+            </div>
+        </section>
 
+        <section class="educacion">
+            <h2>Estudios académicos</h2>
+            <ul>
+                <li>Título Universitario - Ingeniería en Sistemas y Ciencias de la Computación</li>
+                <li>Certificado - Developer Front-End Junior</li>
+                <li>Certificado - Developer Full Stack</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- CERTIFICADOS -->
+    <section class="certificados">
+        <a href="https://app.aluracursos.com/user/usdaniel502/fullCertificate/7795720bc7a3094fc0b2f340dc428eef">
+            Ver certificados
+        </a>
+    </section>
+
+    <!-- CV -->
+    <section class="cv">
+        <label class="texto_cv" for="language">Este en mi CV: </label>
+        <select id="language" class="opc_idi">
+            <option value="" disabled selected>Seleccione un idioma</option>
+            <option value="es">Español</option>
+            <option value="en">English</option>
+        </select>
+        <button class="btn_cv" onclick="downloadCV()">Descargar CV</button>
+    </section>
+
+    <footer class="footer seccion">
+        <p class="copyright">
+            &copy; Todos los derechos Reservados DC <span id="anio"></span>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("anio").textContent = new Date().getFullYear();
+        });
+    </script>
     <script src="build/js/bundle.min.js"></script>
 </body>
 </html>

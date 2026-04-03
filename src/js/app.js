@@ -47,3 +47,61 @@ function downloadCV() {
 
     downloadLink.click();
 }
+
+// =========================
+// LOADER INTELIGENTE
+// =========================
+
+const yaCargo = sessionStorage.getItem("loaderMostrado");
+
+if (!yaCargo) {
+
+    document.body.classList.add("loading");
+
+    window.addEventListener("load", () => {
+
+        const bar = document.getElementById("loader-bar");
+        const percent = document.getElementById("loader-percent");
+        const text = document.getElementById("loader-text");
+        const loader = document.getElementById("loader");
+        const dots = document.getElementById("loader-dots");
+
+        let progress = 0;
+
+        const interval = setInterval(() => {
+            progress++;
+
+            bar.style.width = progress + "%";
+            percent.textContent = progress + "%";
+
+            dots.textContent = ".".repeat((progress % 3) + 1);
+
+            if (progress >= 100) {
+                clearInterval(interval);
+
+                text.textContent = "Listo";
+
+                setTimeout(() => {
+                    loader.style.opacity = "0";
+                    loader.style.transition = "opacity 0.5s ease";
+
+                    setTimeout(() => {
+                        loader.style.display = "none";
+                        document.body.classList.remove("loading");
+
+                        // 🔥 MARCAR COMO MOSTRADO
+                        sessionStorage.setItem("loaderMostrado", "true");
+
+                    }, 500);
+
+                }, 500);
+            }
+
+        }, 20);
+    });
+
+} else {
+    // 🔥 SI YA SE MOSTRÓ → ocultarlo instantáneamente
+    const loader = document.getElementById("loader");
+    if (loader) loader.style.display = "none";
+}

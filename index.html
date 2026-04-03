@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
+
+<div id="loader">
+    <h1 class="loader-title">Bienvenido</h1>
+
+    <div class="loader-bar-container">
+        <div class="loader-bar" id="loader-bar"></div>
+    </div>
+
+    <div class="loader-info">
+        <span id="loader-text">Cargando</span>
+        <span id="loader-percent">0%</span>
+    </div>
+
+    <div class="loader-dots" id="loader-dots">...</div>
+</div>
+
     <header class="header inicio">
         <nav>
             <h2 class="log">DC</h2>
@@ -40,8 +56,12 @@
         </div>
     </div>
 
-    <section class="ultimosProyectos">
-        <h3 class="titulo_principal_proyectos">Últimos Proyectos</h3>
+<section class="ultimosProyectos">
+    <h3 class="titulo_principal_proyectos">Últimos Proyectos</h3>
+
+
+    <div class="proyectos-grid">
+
         <section class="proyecto">
             <img class="proyecto_imagen" src="build/img/1proyecto.png" alt="imagen proyecto">
             <section class="proyecto_descripcion">
@@ -74,8 +94,9 @@
             </section>
             <a class="contenido" href="https://cafeblog-dc.netlify.app">Ver Proyecto</a>
         </section>
-        
-    </section>
+
+    </div>
+</section>
 
     <section id="comentario" class="comentario">
         <label class="comentario_titulo">
